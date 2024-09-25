@@ -1,0 +1,33 @@
+GET http://localhost:7777/poems
+
+###
+
+GET http://localhost:7777/poems/poem/2
+
+###
+
+POST http://localhost:7777/poems/poem
+Content-Type: application/json
+
+{
+  "type": "KEVIN_RED_HAIR",
+  "poem": "Kevin er sej, Kevin er cool, Kevin er en rigtig skør abe.",
+  "author": "chatgpt",
+  "title": "Kevin er sej"
+}
+
+###
+
+DELETE localhost:7777/poems/poem/7
+
+###
+
+PUT http://localhost:7777/poems/poem/8
+Content-Type: application/json
+
+{
+  "poem": "test",
+  "author": "mig",
+  "title": "Kevin er sej"
+}
+
